@@ -1,0 +1,30 @@
+<!doctype html>
+<html ng-app="slickgridDemo">
+<head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="bower_components/slickgrid/slick.grid.css">
+    <link rel="stylesheet" href="bower_components/slickgrid/css/smoothness/jquery-ui-1.8.16.custom.css">
+    <link rel="stylesheet" href="bower_components/slickgrid/examples/examples.css">
+</head>
+<body ng-controller="gridCtrl">
+
+
+
+	<slickgrid grid-data="data" grid-columns="gridColumns" grid-options="gridOptions"></slickgrid>
+
+
+	Row number: <input type="text" ng-model="gridRowsNumber"><br>
+	Column number: <input type="text" ng-model="gridColumnsNumber"><br>
+	<button ng-click="buildGrid()">Build grid</button>
+
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/slickgrid/lib/jquery.event.drag-2.2.js"></script>
+    <script src="bower_components/slickgrid/slick.core.js"></script>
+    <script src="bower_components/slickgrid/slick.grid.js"></script>
+    <script src="source/main.js"></script>
+    <script src="source/directives/slickgrig.js"></script>
+</body>
+</html>

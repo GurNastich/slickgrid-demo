@@ -1,0 +1,9 @@
+{
+  "name": "slickgrid_example",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "~1.4.4",
+    "jquery": "~2.1.4",
+    "slickgrid": "~2.1.0"
+  }
+}
