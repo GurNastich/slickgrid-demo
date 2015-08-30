@@ -27,7 +27,6 @@ angular.module('slickgridDemo')
 			for (var i = 0; i < rowNum; i++) {
 				data[i] = {};
 				for (var j =0; j < columns.length; j++){
-					console.log(Math.random());
 					data[i][columns[j].field] = Math.random().toFixed(9);
 				}
 			}
