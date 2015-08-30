@@ -9,15 +9,11 @@
 </head>
 <body ng-controller="gridCtrl">
 
-
-
 	<slickgrid grid-data="data" grid-columns="gridColumns" grid-options="gridOptions"></slickgrid>
-
 
 	Row number: <input type="text" ng-model="gridRowsNumber"><br>
 	Column number: <input type="text" ng-model="gridColumnsNumber"><br>
 	<button ng-click="buildGrid()">Build grid</button>
-
 
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>

@@ -4,6 +4,7 @@
     module.directive('slickgrid', function(){
 
         function linkFunction(scope, el, attr) {
+            
             var grid = new Slick.Grid("#slickgrid", scope.gridData, scope.gridColumns, scope.gridOptions);
 
             scope.$on('update-grid-data', function(event, columns, data) {

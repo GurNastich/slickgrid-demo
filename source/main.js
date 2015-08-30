@@ -33,25 +33,24 @@ angular.module('slickgridDemo')
 			return data;
 		}
 
-			$scope.gridRowsNumber = 100;
-			$scope.gridColumnsNumber = 20;
-			$scope.gridOptions = {
-					enableCellNavigation: true,
-    			enableColumnReorder: false
-					};
+		$scope.gridRowsNumber = 100;
+		$scope.gridColumnsNumber = 20;
 
-function init(){
-				$scope.gridColumns = generateColumns($scope.gridColumnsNumber);
-			$scope.data = generateData($scope.gridRowsNumber, $scope.gridColumns);
-}
-
-
-init();
-
+		$scope.gridOptions = {
+			enableCellNavigation: true,
+			enableColumnReorder: false
+		};
 
 		$scope.buildGrid  = function() {
 			init();
 			$scope.$broadcast('update-grid-data', $scope.gridColumns, $scope.data);
 		}
+
+		function init(){
+			$scope.gridColumns = generateColumns($scope.gridColumnsNumber);
+			$scope.data = generateData($scope.gridRowsNumber, $scope.gridColumns);
+		}
+
+		init();
 
 	}]);
